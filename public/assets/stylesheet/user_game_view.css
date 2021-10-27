@@ -1,0 +1,104 @@
+html, body { 
+    font-family: 'Montserrat';
+    height: 90%;
+    padding: 0; 
+    margin: 0; 
+}
+button{
+    width: 50%; height: 50%; float: left;
+}
+
+#risposta1{
+    background: url('../img/game_red.png') center;
+    background-size: cover;
+}
+#risposta2{
+    background: url('../img/game_blue.png') center;
+    background-size: cover;
+}
+#risposta3{
+    background: url('../img/game_yellow.png') center;
+    background-size: cover;
+}
+#risposta4{
+    background: url('../img/game_green.png') center;
+    background-size: cover;
+}
+
+#nome{
+    
+    padding: 0px 10px;
+}
+#punteggio{
+    
+    padding: 0px 10px;
+}
+
+#container_nome {
+    display: none;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#container_info {
+    display: none;
+    margin-top: 7rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+#info_result {
+    color: white;
+    text-align: center;
+}
+
+#img_result {
+    width: 8rem;
+    /*height: 4rem;*/
+}
+
+#punteggio_parziale {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 3px;
+    padding: 0.5rem 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#info{
+  
+    text-align: center;
+    font-size: 35px;
+}
+
+#loader {
+    display: none;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3A3B3A;
+    width: 50px;
+    height: 50px;
+    -webkit-animation: spin 1.5s linear infinite; /* Safari */
+    animation: spin 1.5s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

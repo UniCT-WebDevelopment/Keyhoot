@@ -1,0 +1,80 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio password</title>
+</head>
+
+<body>
+    <h1>Cambio password</h1>
+
+    <form action="/changepassword" method="POST">
+        <p>Inserisci la tua email!</p>
+        <input type="email" name="email" placeholder="email" required>
+        <p>Inserisci la nuova password!</p>
+        <input type="password" name="password" placeholder="password" required>
+        <button>Cambia password</button>
+    </form>
+    <a href="/login/">Torna al login</a>
+
+</body>
+
+</html>-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Cambio password </title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="../assets/stylesheet/changepassword.css">
+
+</head>
+
+<body>
+
+    <br>
+    <a id="indietro" href="/login/">Torna al login</a>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+
+            </div>
+
+            <div class="col-md-6 main">
+
+                <form action="/changepassword" method="post">
+
+                    <h1> Cambia la password </h1>
+
+                    <input class="box" type="text" name="email" id="email" placeholder="Inserisci la tua email"
+                        required />
+                    <br>
+                    <input class="box" type="password" name="password" id="password"
+                        placeholder="Inserisci una nuova Password! " required />
+                    <br><br>
+                    <input type="submit" id="submitDetails" name="submitDetails" value="Cambia password" /><br>
+
+                </form>
+                <br>
+
+            </div>
+
+
+            <div class="col-md-3">
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

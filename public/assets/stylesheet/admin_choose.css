@@ -1,0 +1,57 @@
+body {
+   background-color: rgb(64, 26, 137);
+   font-family: 'Montserrat';
+}
+#titolo{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    
+}
+#sottotitolo{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    
+}
+#link{
+    color: white;
+}
+#lista_quiz{
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px,auto)); 
+    grid-auto-rows: minmax(100px, auto);
+    justify-items: center;
+    margin-top: 4rem;
+}
+
+#indietro{
+    color: white;
+    text-align: center;
+}
+
+.container_buttons {
+    position: relative;
+}
+
+.eliminaButton {
+    position: absolute;
+    visibility: hidden;
+    right: -10px;
+    top: -7px;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+}
+.quizButton{
+    font-size: 4rem;
+    width: 400px;
+    overflow: scroll;
+}
+.quizButton:hover{
+    cursor: pointer;
+}
+.container_buttons:hover > .eliminaButton {
+    visibility: visible;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quiz_create | Keyhoot</title>
+    <link rel="stylesheet" href="../../../assets/stylesheet/quiz_create.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1 id="titolo">Creazione Quiz <span style="font-size: 3rem;">&#119070</span>eyhoot</h1>
+
+    <div class="campi_form titolo_quiz">
+        <input id="nome" type="text" name="name" placeholder="Titolo quiz" autofocus />
+        <!--'autofocus' evidenzia in automatico l'input-box per cominciare subito a scrivere, una volta aperta la pagina-->
+    </div>
+    <br>
+    <br>
+    <div id="sezione_domande">
+        <div id="area_domanda" class="area_domanda">
+            <input class="domanda" id="domanda1" type="text" placeholder="Domanda 1" />
+            <br>
+            <br>
+            <div class="area_risposte">
+                <div id="prime_due" class="risposte">
+                    <div title="risposta 1" class="risposta1">
+                        <img id="red" src="../../../assets/img/Red.png" style="height: 4rem">
+                        <input id="d1risposta1" class="risposta" type="text" placeholder="risposta 1" />
+                    </div>
+                    <div title="risposta 2" class="risposta2">
+                        <img id="blue" src="../../../assets/img/Blue.png" style="height: 4rem">
+                        <input id="d1risposta2" class="risposta" type="text" placeholder="risposta 2" />
+                    </div>
+                </div>
+
+                <div id="ultime_due" class="risposte">
+                    <div title="risposta 3" class="risposta3">
+                        <img id="green" src="../../../assets/img/Yellow.png" style="height: 4rem">
+                        <input id="d1risposta3" class="risposta" type="text" placeholder="risposta 3" />
+                    </div>
+                    <div title="risposta 4" class="risposta4">
+                        <img id="yellow" src="../../../assets/img/Green.png" style="height: 4rem">
+                        <input id="d1risposta4" class="risposta" type="text" placeholder="risposta 4" />
+                    </div>
+                </div>
+
+            </div>
+
+            <input class="corretta" id="corretta1" onchange='checkNumberQuiz(1)' type="number" min="1" max="4"
+                placeholder="Risposta corretta" />
+            <!--type="number" fa si che la casella sia corredata da freccette che aumentano o diminuiscono il numero-->
+        </div>
+    </div>
+    <br>
+
+    <div id="button_container">
+        <button onclick='elimina()'>Elimina il quiz e ritorna alla selezione</button>
+
+
+
+        <div class="campi_form">
+            <button id="crea_quiz" onclick="updateDb()">Crea Quiz</button>
+        </div>
+
+
+        <button onclick="add_domanda()">Aggiungi un'altra domanda</button>
+    </div>
+
+    <script src="../../../socket.io/socket.io.js"></script>
+    <script src="../../../assets/javascripts/quiz_create.js"></script>
+</body>
+
+</html>

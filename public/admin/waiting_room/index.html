@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admin_waiting_room Keyhoot</title>
+    <link rel="stylesheet" href="../../assets/stylesheet/admin_waiting_room.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+
+<body>
+    <div id="pin_container">
+        <div id="pin_di_gioco" class="pin">PIN di gioco:</div>
+        <div id="pin_view" class="pin"></div>
+    </div>
+    <div id="container_blb">
+        <button id="elimina" onclick="chiudi_stanza()">Esci dal gioco</button>
+        <img id="logo" src="../../assets/img/keyhoot-logo-white.png">
+        <button id='inizio' onclick="inizio_quiz()">Inizia Quiz</button>
+    </div>
+    <div id="container_wait">
+        <div id="wait"><span>In attesa di giocatori...</span></div>
+    </div>
+    <div id="lista_giocatori"></div>
+
+    <script src="../../socket.io/socket.io.js"></script>
+    <script src="../../assets/javascripts/admin_waiting_room.js"></script>
+</body>
+
+</html>

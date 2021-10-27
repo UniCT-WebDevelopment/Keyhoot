@@ -1,0 +1,152 @@
+body {
+    background-color: rgb(242,242,242);
+    font-family: 'Montserrat';
+}
+.area_domanda{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-style: groove;
+    border-width: 1px;
+    padding: 10px;
+    
+}
+.domanda{
+    width: 90%;
+    height: 3rem;
+    font-size: 2rem;
+    
+}
+.area_risposte {
+    width: 100%;
+    margin: 3rem;
+}
+.risposte {
+    margin: 0;
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.risposta1 {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    background-color: white;
+    width: 80%;
+}
+.risposta2 {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    background-color: white;
+    width: 80%;
+}
+.risposta3 {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    background-color: white;
+    width: 80%;
+}
+.risposta4 {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    background-color: white;
+    width: 80%;
+}
+.corretta{
+    width: 15%;
+    text-align: center;
+    
+    position: relative;
+    left: 1.5rem;
+}
+@media only screen and (min-width: 768px) {
+.risposte {
+    margin: 0.5rem;
+    width: 100%;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+.risposta1 {
+    
+    width: 40%;
+}
+.risposta2 {
+    
+    width: 40%;
+}
+.risposta3 {
+    
+    width: 40%;
+}
+.risposta4 {
+    
+    width: 40%;
+}
+.corretta{
+    width: 5%;
+    text-align: center;
+    
+    position: initial;
+}
+}
+
+
+.risposta {
+    width: 70%;
+    flex: 1;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+#titolo{
+    text-align: center;
+    
+}
+.titolo_quiz {
+    display: flex;
+    justify-content: center;
+}
+#nome {
+    display: inline-block;
+    width: 70%;
+    height: 3rem;
+    outline: none;
+    text-align: center;
+    font-size: 2rem;
+}
+input::placeholder {
+    text-align: center;
+}
+#button_container {
+    display: flex;
+    justify-content: space-between;
+}
+#crea_quiz {
+    position: relative;
+    right: 19px;
+}
+button {
+    height: 3rem;
+    border-radius: 3px;
+    background-color: rgb(48, 102, 199);
+    color: white;
+}

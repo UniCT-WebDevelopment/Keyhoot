@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Game_view | Keyhoot</title>
+    <link rel="stylesheet" href="../../assets/stylesheet/admin_game_view.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container_domanda">
+        <h2 id="domanda">Question</h1>
+    </div>
+    <h4 id="num_domanda" style="text-align: center; margin-top: 0; margin-bottom: 3rem;">Domanda 1 / </h4>
+    <div id="info">
+        <h3 id="timer_left">Tempo rimasto:<span id="num"> 20</span></h3>
+        <h3 id="risposte_giocatori">Risposte dei giocatori: 0 / </h3>
+    </div>
+
+    <!--il seguente è il grafico che segnala il punteggio. Viene mostrato solo quando il tempo della domanda si è concluso-->
+    <div id="container_risultati">
+        <div id="container_grafico_num_risposte">
+            <div class="num_risp" id="num_risp_red">
+                <div id="num_risposta1"></div>
+
+            </div>
+            <div class="num_risp" id="num_risp_blue">
+                <div id="num_risposta2"></div>
+
+            </div>
+            <div class="num_risp" id="num_risp_yellow">
+                <div id="num_risposta3"></div>
+
+            </div>
+            <div class="num_risp" id="num_risp_green">
+                <div id="num_risposta4"></div>
+
+            </div>
+        </div>
+        <div id="container_immagini">
+            <img src="../../assets/img/classifica_red.png" style="width: 104px;">
+            <img src="../../assets/img/classifica_blue2.png" style="width: 104px">
+            <img src="../../assets/img/classifica_yellow2.png" style="width: 104px">
+            <img src="../../assets/img/classifica_green2.png" style="width: 104px">
+        </div>
+    </div>
+
+    <div id="area_risposte">
+        <div id="prime_due" class="risposte">
+            <div id="risposta1">
+                <img src="../../assets/img/Red.png" style="height: 106%;">
+                <span>Risposta</span>
+            </div>
+            <div id="risposta2">
+                <img src="../../assets/img/Blue.png" style="height: 103%;">
+                <span>Risposta</span>
+            </div>
+        </div>
+        <div id="ultime_due" class="risposte">
+            <div id="risposta3">
+                <img src="../../assets/img/Yellow.png" style="height: 102%;">
+                <span>Risposta</span>
+            </div>
+            <div id="risposta4">
+                <img src="../../assets/img/Green.png" style="height: 102%;">
+                <span>Risposta</span>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!--<h4 id="num_domanda">Domanda 1 / </h4>-->
+    <button onclick="prossima_domanda()" id="prossima_domanda_Button">Prossima domanda</button>
+
+    <div id="podio">
+        <div id="medaglie">
+            <img id="oro" src="../../assets/img/primo.png">
+            <img id="argento" src="../../assets/img/secondo.png">
+            <img id="bronzo" src="../../assets/img/terzo.png">
+        </div>
+        <div id="vincitori">
+            <h1 id="vincitore1_nome"></h1>
+            <h1 id="vincitore2_nome"></h1>
+            <h1 id="vincitore3_nome"></h1>
+        </div>
+        <div id="punteggio">
+            <h1 id="vincitore1_punteggio"></h1>
+            <h1 id="vincitore2_punteggio"></h1>
+            <h1 id="vincitore3_punteggio"></h1>
+        </div>
+    </div>
+
+    <script src="../../socket.io/socket.io.js"></script>
+    <script src="../../assets/javascripts/admin_game_view.js"></script>
+</body>
+
+</html>

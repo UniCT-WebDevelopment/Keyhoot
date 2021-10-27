@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Scegli Keyhoot</title>
+    <link rel="stylesheet" href="../../assets/stylesheet/admin_choose.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+
+<body>
+    <!--<a id="indietro" href="../../">Indietro</a>-->
+    <!--window.localStorage.setItem('logout', Date.now()) serve a settare l'oggetto localStorage a 'logout', in modo che l'evento possa essere intercettato da tutti i tab del browser-->
+    <a id="indietro" onclick="window.localStorage.setItem('logout', Date.now())" href="../../logout">Logout</a>
+    <h1 id="titolo">Scegli un <span style="font-size: 5rem;">&#119070</span>eyhoot_Quiz</h1>
+    <h4 id="sottotitolo">Scegli un quiz sotto o <a id="link" href="quiz_create/">Creane uno tu stesso!</a></h4>
+    <div id="lista_quiz" class="grid">
+
+    </div>
+
+
+    <script src="../../socket.io/socket.io.js"></script>
+    <script src="../../assets/javascripts/admin_choose.js"></script>
+</body>
+
+</html>

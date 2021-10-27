@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>User_game | Keyhoot</title>
+    <link rel="stylesheet" href="../../assets/stylesheet/user_game_view.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container_nome"></div>
+    <div id="statistiche">
+        <h4 id="nome">Nome: </h4>
+        <h4 id="punteggio">Punteggio: </h4>
+    </div>
+    <div id="container_info">
+        <h1 id="info_result"></h1>
+        <img id="img_result" src="//:0">
+        <!--https://stackoverflow.com/questions/19126185/setting-an-image-src-to-empty-->
+        <div id="punteggio_parziale"></div>
+    </div>
+    <h2 id="info"></h2>
+    <!-- "info" conterrà il Disclaimer: "Risposta inviata! In attesa degli altri giocatori"-->
+    <div id="loader"></div>
+    <button onclick="sottometti_risposta(1)" id="risposta1" class="button"></button>
+    <button onclick="sottometti_risposta(2)" id="risposta2" class="button"></button>
+    <br>
+    <button onclick="sottometti_risposta(3)" id="risposta3" class="button"></button>
+    <button onclick="sottometti_risposta(4)" id="risposta4" class="button"></button>
+    <script src="../../socket.io/socket.io.js"></script>
+    <script src="../../assets/javascripts/user_game_view.js"></script>
+</body>
+
+</html>
